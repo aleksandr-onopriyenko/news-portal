@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+
+  font-family: $font-main;
+  font-size: $font-size;
+  line-height: 1.1em;
+
+  &.active {
+    overflow: hidden;
+  }
+}
+
+body {
+  transition: transform 0.5s;
+  transform: translateX(0);
+  &.active {
+    position: relative;
+
+    transform: translateX(-252px);
+
+    &:before {
+      position: absolute;
+      z-index: 3;
+
+      content: "";
+
+      opacity: 0.8;
+      background: #000000;
+
+      inset: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+ul {
+  @include unlist;
+}
