@@ -169,7 +169,7 @@
 
       font-size: 1.125rem;
       line-height: 1.8rem;
-      @include block-shorten(320px, 4);
+      @include block-shorten(auto, 11);
     }
 
     &__link {

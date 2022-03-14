@@ -496,8 +496,8 @@ ul {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  height: 320px;
-  -webkit-line-clamp: 4;
+  height: auto;
+  -webkit-line-clamp: 11;
 }
 .slider-item__link {
   color: #eb5757;
