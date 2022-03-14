@@ -57,9 +57,9 @@
           transform: translateX(-2px) rotate(-180deg);
 }
 .post-page-header__link a:before {
-  -webkit-transform: scale(0.8) rotate(-180deg);
-      -ms-transform: scale(0.8) rotate(-180deg);
-          transform: scale(0.8) rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .slider-item__link a:before, .post-page-header__link a:before {
@@ -888,9 +888,9 @@ ul {
             transform: scale(0.8);
   }
   .post-page-header__link a:before {
-    -webkit-transform: scale(0.8) rotate(-180deg);
-        -ms-transform: scale(0.8) rotate(-180deg);
-            transform: scale(0.8) rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
   html {
     font-size: 14px;
