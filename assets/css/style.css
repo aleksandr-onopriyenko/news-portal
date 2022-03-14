@@ -473,6 +473,11 @@ ul {
 .slider-item__title {
   width: 65%;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  height: 130px;
+  -webkit-line-clamp: 4;
   font-size: 2rem;
   line-height: 130%;
 }
