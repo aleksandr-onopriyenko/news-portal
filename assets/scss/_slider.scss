@@ -88,9 +88,9 @@
       color: $color-light;
       border-radius: 4px;
       background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.15) 65%
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.15) 65%
       );
 
       @include lg {
@@ -169,6 +169,7 @@
 
       font-size: 1.125rem;
       line-height: 1.8rem;
+      @include block-shorten(320px, 4);
     }
 
     &__link {

@@ -7,8 +7,6 @@
   list-style: none;
 }
 
-
-
 // Single-line text with a three-dot at the end
 
 @mixin text-shorten {
@@ -18,24 +16,16 @@
   text-overflow: ellipsis;
 }
 
-
-
 // Multiline text with a triple-dot at the end
 
-@mixin block-shorten($fz: 1rem, $lh: 1.5, $h: 70px, $l: 3) {
+@mixin block-shorten($h: 70px, $l: 3) {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
 
   height: $h;
-
-  font-size: $fz;
-  line-height: $fz * $lh;
-
   -webkit-line-clamp: $l;
 }
-
-
 
 // The first parameter - color, the second - transparency
 // One parameter - black with the specified transparency
@@ -44,8 +34,6 @@
   background: rgba($rgb, $rgb, $rgb, $a);
 }
 
-
-
 // Turn off the ability to select an item
 
 @mixin unselectable {
@@ -53,8 +41,6 @@
 
   -webkit-touch-callout: none;
 }
-
-
 
 // Background image, for the whole block
 // @include bg-image("image.jpg");
@@ -70,16 +56,12 @@
   }
 }
 
-
-
 @mixin block-header($mb: 10px) {
   margin-top: 0;
   margin-bottom: $mb;
 
   border-bottom: 1px solid $color-dark;
 }
-
-
 
 // Visually hidden element
 
@@ -97,11 +79,9 @@
   border: 0;
 }
 
-
-
 // Absolute positioning
 
-@mixin abs-position ($top: 0, $right: 0, $bottom: 0, $left: 0) {
+@mixin abs-position($top: 0, $right: 0, $bottom: 0, $left: 0) {
   position: absolute;
   top: $top;
   right: $right;
