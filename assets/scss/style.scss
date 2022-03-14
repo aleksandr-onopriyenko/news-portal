@@ -6,14 +6,11 @@
 
 @import "common";
 
-@import "header/header";
-@import "header/header-menu";
-@import "header/header-logo";
-@import "header/header-navbar";
-@import "header/header-slider";
+@import "header";
+@import "slider";
+@import "post";
+@import "form";
+@import "post-page";
+@import "sidebar";
 
-@import "sections/features";
-
-@import "footer/footer";
-@import "footer/footer-top";
-@import "footer/footer-bottom";
+@import "footer";

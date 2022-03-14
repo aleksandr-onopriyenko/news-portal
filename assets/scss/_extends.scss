@@ -1,5 +1,78 @@
-.container {
-  max-width: $max-width;
-  margin: 0 auto;
+%main-link {
+  display: inline-flex;
+  align-items: center;
+  order: 1;
+
+  font-family: $font-header;
+
+  gap: 12px;
+
+  &:hover {
+    color: darken($color-accent, 20%);
+  }
+
+  &:hover::before {
+    transform: translateX(2px);
+  }
+
+  &:before {
+    display: block;
+    order: 2;
+
+    width: 23px;
+    height: 10px;
+
+    content: "";
+    transition: transform 0.2s;
+
+    background-image: url(../img/arrow-right-light.svg);
+    background-repeat: no-repeat;
+
+    @include md {
+      transform: scale(0.8);
+    }
+  }
+}
+
+%main-link--rotate {
+  flex-direction: row-reverse;
+
+  color: $color-accent;
+
+  font-family: $font-main;
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  @extend %main-link--lg;
+
+  &:hover::before {
+    transform: translateX(-2px) rotate(-180deg);
+  }
+
+  &:before {
+    transform: scale(0.8) rotate(-180deg);
+
+    @include md {
+      transform: scale(0.8) rotate(-180deg);
+    }
+  }
+}
+
+%main-link--lg {
+  @extend %main-link;
+  &:before {
+    width: 48px;
+    height: 29px;
+
+    background-image: url(../img/arrow-right.svg);
+  }
+}
+
+%h2-title {
+  margin-bottom: 2px;
   padding: 0 20px;
+
+  font-family: $font-header;
+  font-size: 2.25rem;
+  font-weight: 700;
 }

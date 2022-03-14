@@ -1,0 +1,35 @@
+.sidebar {
+  flex-basis: 300px;
+  flex-shrink: 0;
+
+  padding: 160px 0;
+
+  @include lg {
+    padding: 0;
+  }
+
+  &__title {
+    @extend %h2-title;
+  }
+
+  &-news {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: -20px;
+
+    @include lg {
+      flex-direction: row;
+
+      margin-right: 0;
+    }
+
+    &-item {
+      width: 100%;
+
+      @include md {
+        width: 50%;
+      }
+    }
+  }
+}

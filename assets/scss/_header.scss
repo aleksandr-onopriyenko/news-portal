@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1.5rem;
+  padding: 2rem 0;
+
+  font-size: $font-size;
+
+  &-logo {
+    &__title {
+      display: flex;
+      align-items: center;
+
+      color: $color-dark;
+
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      gap: calc($gap / 2);
+      &-black {
+        padding: 0.5em;
+
+        color: $color-light;
+        border-radius: 4px;
+        background-color: $color-dark;
+      }
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  &-link {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 2rem;
+      height: 2rem;
+
+      color: $color-blue;
+      i {
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        color: darken($color-blue, 20%);
+      }
+    }
+  }
+}
